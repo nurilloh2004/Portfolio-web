@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Migrate') {
             steps {
-                sh 'python manage.py migrate'
+                sh 'python3 manage.py migrate'
             }
         }
         stage('Create Superuser') {
